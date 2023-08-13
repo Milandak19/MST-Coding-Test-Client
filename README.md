@@ -1,27 +1,68 @@
-# vite-template-redux
+# React App with React Router
 
-Uses [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev/), and [React Testing Library](https://github.com/testing-library/react-testing-library) to create a modern [React](https://react.dev/) app compatible with [Create React App](https://create-react-app.dev/)
+This is a starter template for creating a React app using React Router DOM.
 
-```sh
-npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+
+## Features
+
+- React Router DOM for routing
+
+## Getting Started
+
+To get the project up and running on your local machine, follow these steps.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Milandak19/MST-Coding-Test-Client.git
+   ```
+
+2. Install dependencies:
+
+```bash
+cd MST-Coding-Test-Client
+npm install
 ```
 
-## Goals
+## Usage
 
-- Easy migration from Create React App or Vite
-- As beginner friendly as Create React App
-- Optimized performance compared to Create React App
-- Customizable without ejecting
+1. Start the development server:
 
-## Scripts
+```bash
+npm start dev
+```
 
-- `dev`/`start` - start dev server and open browser
-- `build` - build for production
-- `preview` - locally preview production build
-- `test` - launch test runner
+2. Access the app at http://localhost:5173.
 
-## Inspiration
+## Folder Structure
 
-- [Create React App](https://github.com/facebook/create-react-app/tree/main/packages/cra-template)
-- [Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react)
-- [Vitest](https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib)
+The project structure follows a conventional pattern:
+
+- src/: Main application code
+
+  - components/: Reusable UI components
+  - pages/: Top-level components for routes
+  - api/: API configuration using Axios or Fetch
+  - utils/: Utility functions
+
+- public/: Public assets and index.html
+
+## Technologies Used
+
+- React
+- React Router DOM
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.

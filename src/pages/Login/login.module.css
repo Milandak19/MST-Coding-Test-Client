@@ -1,0 +1,97 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	color: cadetblue;
+}
+
+.box {
+	background: rgba(240, 225, 225, 0.6);
+	width: 35%;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+}
+
+.box h1 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px cadetblue solid;
+}
+
+.input label {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.input input {
+	padding: 5px;
+	background: cadetblue;
+	border: 1px rgba(240, 225, 225, 0.6) dashed;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 5px;
+	color: white;
+}
+
+.second {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.second p {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.second p a {
+	color: cadetblue;
+}
+
+.box button {
+	width: 50%;
+	padding: 8px 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(240, 225, 225, 1);
+	background: cadetblue;
+	border: 1px white solid;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.box button:hover {
+	background: rgb(81, 137, 138);
+}
+
+.showPass {
+	display: flex;
+	justify-content: space-between;
+}
+
+.labelShow {
+	cursor: pointer;
+}
