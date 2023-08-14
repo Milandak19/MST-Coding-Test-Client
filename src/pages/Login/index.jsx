@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './login.module.css';
+import { loginApi } from '../../services/api';
 
 const INITIAL_VALUES = {
 	username: '',
@@ -13,11 +14,33 @@ const Login = () => {
 		password: '',
 	});
 	const [showPass, setShowPass] = useState(false);
+	const [error, setError] = useState(false);
+	const navigate = useNavigate();
+
+	const onSubmit = async () => {
+		const response = await loginApi(values);
+		if (response.status === 'failed') {
+			setError(true);
+			setTimeout(() => {
+				setError(false);
+			}, 3000);
+		} else {
+			setValues(INITIAL_VALUES);
+			navigate('/');
+		}
+	};
+
+	const required = Boolean(!values.password || !values.username);
 
 	return (
 		<div className={style.container}>
 			<div className={style.box}>
 				<h1>Login</h1>
+				{error && (
+					<p>
+						Something went wrong, please check your information and try again
+					</p>
+				)}
 				<div className={style.form}>
 					<div className={style.input}>
 						<label htmlFor="username">Username</label>
@@ -58,7 +81,9 @@ const Login = () => {
 						<Link to="/forgot-password">Forgot Password</Link>
 					</p>
 				</div>
-				<button>Login</button>
+				<button disabled={required} onClick={onSubmit}>
+					Login
+				</button>
 			</div>
 		</div>
 	);

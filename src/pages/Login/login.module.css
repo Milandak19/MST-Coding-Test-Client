@@ -95,3 +95,57 @@
 .labelShow {
 	cursor: pointer;
 }
+
+.box button:disabled {
+	background: rgb(68, 105, 108);
+	cursor: auto;
+}
+
+.box button:disabled:hover {
+	background: rgb(68, 105, 108);
+}
+
+.box p:nth-child(2) {
+	color: rgb(160, 95, 95);
+	font-weight: 500;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 599px) {
+	.box {
+		width: 80%;
+	}
+
+	.second p {
+		font-size: 12px;
+	}
+
+	.box button {
+		font-size: 12px;
+	}
+
+	.input label {
+		font-size: 12px;
+	}
+
+	.input input {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+	.box {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.box {
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.box {
+		width: 45%;
+	}
+}

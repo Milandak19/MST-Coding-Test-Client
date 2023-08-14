@@ -60,6 +60,16 @@
 	height: 100px;
 }
 
+.sectionTwo input {
+	width: 180px;
+}
+
+.sectionTwo p {
+	font-size: 12px;
+	font-weight: 500;
+	color: rgb(160, 95, 95);
+}
+
 .lastSection {
 	width: 100%;
 	display: flex;
@@ -70,4 +80,63 @@
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;
+}
+
+.notif {
+	position: absolute;
+	width: 30%;
+	bottom: 1%;
+	right: 1%;
+	background: rgba(240, 225, 225, 0.6);
+	color: cadetblue;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.notif p {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.logout {
+	width: min-content;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 599px) {
+	.box {
+		width: 80%;
+	}
+	.profile {
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.notif {
+		width: 80%;
+	}
+
+	.notif p {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+	.box {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.box {
+		width: 65%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.box {
+		width: 45%;
+	}
 }
