@@ -27,12 +27,12 @@ const pagesData = [
 		title: 'forgot-password',
 	},
 	{
-		path: 'reset-password',
+		path: 'reset-password/:token',
 		element: <ResetPassword />,
 		title: 'reset-password',
 	},
 	{
-		path: 'verify-email',
+		path: 'verify-email/:token',
 		element: <VerifyEmail />,
 		title: 'verify-email',
 	},
